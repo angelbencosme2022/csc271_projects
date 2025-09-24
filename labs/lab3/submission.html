@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Submission</title>
+</head>
+<body>
+    <h1>Submit Your Recipe</h1>
+    <form action="index.html" method="get">
+        <label for="recipeName">Recipe Name:</label><br>
+        <input type="text" id="recipeName" name="recipeName" required><br><br>
+
+        <label for="ingredients">Ingredients and Instructions:</label><br>
+        <textarea id="ingredients" name="ingredients" rows="4" cols="50" required></textarea><br><br>
+
+        <label>Difficulty Level:</label><br>
+        <input type="radio" id="easy" name="difficulty" value="Easy" required>
+        <label for="easy">Easy</label><br>
+        <input type="radio" id="medium" name="difficulty" value="Medium">
+        <label for="medium">Medium</label><br>
+        <input type="radio" id="hard" name="difficulty" value="Hard">
+        <label for="hard">Hard</label><br><br>
+        <label>Dietary Preferences:</label><br>
+        <input type="checkbox" id="vegetarian" name="dietary" value="Vegetarian">
+        <label for="vegetarian">Vegetarian</label><br>
+        <input type="checkbox" id="vegan" name="dietary" value="Vegan">
+        <label for="vegan">Vegan</label><br>
+        <input type="checkbox" id="glutenFree" name="dietary" value="Gluten-Free">
+        <label for="glutenFree">Gluten-Free</label><br>
+        <input type="checkbox" id="none" name="dietary" value="None">
+        <label for="none">None</label><br><br>
+
+        <input type="submit" value="Submit Recipe">
+    </form>
+    
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- new file called submission.html that meets the following requirements:
+Use the correct HTML document structure with one set of html, head and body tags. 
+Give this page a distinct title (title appears in the browser tab, not on the web page).
+Create a form that allows users to submit new recipes. Include the following input types:
+Text input fields for the user’s recipe name.
+A text area for ingredients and instructions.
+Radio buttons for difficulty level (Easy, Medium, Hard).
+Checkboxes for dietary preferences (Vegetarian, Vegan, etc.).
+A submit button. When the form is submitted, it redirects back to index.html. -->
