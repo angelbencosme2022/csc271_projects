@@ -1,0 +1,171 @@
+/* SoundStory Music Forum Stylesheet */
+
+/* Reset and Base Styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  line-height: 1.6;
+  color: #e0e0e0;
+  background: linear-gradient(135deg, #1a1a2e 0%, #16213e 100%);
+  min-height: 100vh;
+  padding: 2rem;
+}
+
+/* Main Heading */
+h1 {
+  font-size: 3rem;
+  font-weight: 700;
+  color: #00d4ff;
+  text-align: center;
+  margin-bottom: 2rem;
+  text-shadow: 0 0 20px rgba(0, 212, 255, 0.5);
+  letter-spacing: 1px;
+}
+
+/* Section Headings */
+h2 {
+  font-size: 1.8rem;
+  color: #ff6b9d;
+  margin: 2rem 0 1rem 0;
+  padding-bottom: 0.5rem;
+  border-bottom: 2px solid rgba(255, 107, 157, 0.3);
+}
+
+/* Paragraphs */
+p {
+  font-size: 1.1rem;
+  margin-bottom: 1.5rem;
+  max-width: 800px;
+}
+
+/* Strong and Emphasis */
+strong {
+  color: #ffd700;
+  font-weight: 600;
+}
+
+em {
+  color: #00d4ff;
+  font-style: italic;
+}
+
+/* Horizontal Rule */
+hr {
+  border: none;
+  height: 2px;
+  background: linear-gradient(to right, transparent, #ff6b9d, transparent);
+  margin: 2.5rem 0;
+}
+
+/* Lists */
+ul {
+  list-style: none;
+  margin: 1.5rem 0;
+  max-width: 800px;
+}
+
+ul li {
+  font-size: 1.1rem;
+  padding: 0.8rem 0 0.8rem 2rem;
+  position: relative;
+  transition: transform 0.2s ease;
+}
+
+ul li:hover {
+  transform: translateX(5px);
+}
+
+ul li::before {
+  content: "♪";
+  position: absolute;
+  left: 0;
+  color: #ff6b9d;
+  font-size: 1.3rem;
+}
+
+/* Links */
+a {
+  color: #00d4ff;
+  text-decoration: none;
+  font-weight: 500;
+  transition: all 0.3s ease;
+  position: relative;
+}
+
+a::after {
+  content: '';
+  position: absolute;
+  width: 0;
+  height: 2px;
+  bottom: -2px;
+  left: 0;
+  background-color: #00d4ff;
+  transition: width 0.3s ease;
+}
+
+a:hover {
+  color: #33e0ff;
+}
+
+a:hover::after {
+  width: 100%;
+}
+
+a[target="_blank"]::before {
+  content: "↗ ";
+  font-size: 0.8em;
+}
+
+/* Button */
+button {
+  background: linear-gradient(135deg, #ff6b9d, #c44569);
+  color: white;
+  border: none;
+  padding: 1rem 2rem;
+  font-size: 1.1rem;
+  font-weight: 600;
+  border-radius: 50px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 15px rgba(255, 107, 157, 0.4);
+  margin-top: 2rem;
+}
+
+button:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 6px 20px rgba(255, 107, 157, 0.6);
+  background: linear-gradient(135deg, #ff8bb3, #d5567a);
+}
+
+button:active {
+  transform: translateY(0);
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  body {
+    padding: 1rem;
+  }
+
+  h1 {
+    font-size: 2rem;
+  }
+
+  h2 {
+    font-size: 1.4rem;
+  }
+
+  p, ul li {
+    font-size: 1rem;
+  }
+
+  button {
+    padding: 0.8rem 1.5rem;
+    font-size: 1rem;
+  }
+}
