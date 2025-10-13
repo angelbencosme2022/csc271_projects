@@ -1,6 +1,3 @@
-<!-- Angel Bencosme 9/26
-This page is kind of like the page where you can make a post to the forum -->
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -11,81 +8,105 @@ This page is kind of like the page where you can make a post to the forum -->
 </head>
 <body>
     <!-- Logo -->
-    <img src="images/soundstory.jpg" alt="SoundStory original logo: stylized headphones with music notes" width="200" height="200">
-
-    <h1>Welcome to the Second Page of SoundStory</h1>
-    <p>This is a space for deeper discussions about music.</p>
-
-    <!-- Related Images -->
-    <div>
-        <img src="images/clairo.jpeg" alt="People discussing music in a forum" width="300" height="200">
-        <img src="images/laufey.jpeg" alt="Colorful music waveform illustration" width="300" height="200">
+    <div class="logo-section">
+        <img src="images/soundstory.jpg" alt="SoundStory original logo: stylized headphones with music notes" width="200" height="200">
     </div>
 
-    <!-- Table: Recent Forum Topics -->
-    <h2>Recent Forum Topics</h2>
-    <table>
-        <thead>
-            <tr>
-                <th>Topic</th>
-                <th>Started By</th>
-                <th>Replies</th>
-            </tr>
-        </thead>
-        <tbody>
-            <tr>
-                <td>Favorite Album of 2024</td>
-                <td>musicfan22</td>
-                <td>15</td>
-            </tr>
-            <tr>
-                <td>Best Headphones for Mixing</td>
-                <td>soundguru</td>
-                <td>8</td>
-            </tr>
-            <tr>
-                <td>Share Your Playlist!</td>
-                <td>djangel</td>
-                <td>12</td>
-            </tr>
-        </tbody>
-    </table>
+    <div class="title-section">
+        <h1>Welcome to the Second Page of SoundStory</h1>
+    </div>
 
-    <!-- Forum Post Form -->
-    <h2>Start a New Discussion</h2>
-    <form action="#" method="post">
-        <label for="username">Your Name:</label>
-        <input type="text" id="username" name="username" required maxlength="20"><br><br>
+    <div class="header">
+        <span class="header-logo">SoundStory</span>
+        <nav class="header-nav">
+            <a href="index.html">Home</a>
+            <a href="second_page.html" class="active">Forum</a>
+            <a href="#">About</a>
+        </nav>
+    </div>
 
-        <label for="topic">Topic Title:</label>
-        <input type="text" id="topic" name="topic" required maxlength="50"><br><br>
+    <div id="main-content">
+        <div class="intro-section">
+            <p>This is a space for deeper discussions about music.</p>
+        </div>
 
-        <label>Category:</label>
-        <input type="radio" id="general" name="category" value="General" checked>
-        <label for="general">General</label>
-        <input type="radio" id="gear" name="category" value="Gear">
-        <label for="gear">Gear</label>
-        <input type="radio" id="music" name="category" value="Music">
-        <label for="music">Music</label><br><br>
+        <!-- Related Images -->
+        <div class="related-images">
+            <img src="images/clairo.jpeg" alt="People discussing music in a forum" width="300" height="200">
+            <img src="images/laufey.jpeg" alt="Colorful music waveform illustration" width="300" height="200">
+        </div>
 
-        <label>
-            <input type="checkbox" name="notify" value="yes">
-            Notify me of replies
-        </label><br><br>
+        <!-- Table: Recent Forum Topics -->
+        <div class="forum-topics-section">
+            <h2>Recent Forum Topics</h2>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Topic</th>
+                        <th>Started By</th>
+                        <th>Replies</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Favorite Album of 2024</td>
+                        <td>musicfan22</td>
+                        <td>15</td>
+                    </tr>
+                    <tr>
+                        <td>Best Headphones for Mixing</td>
+                        <td>soundguru</td>
+                        <td>8</td>
+                    </tr>
+                    <tr>
+                        <td>Share Your Playlist!</td>
+                        <td>djangel</td>
+                        <td>12</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
 
-        <label for="message">Message:</label><br>
-        <textarea id="message" name="message" rows="5" cols="40" required></textarea><br><br>
+        <!-- Forum Post Form -->
+        <div class="forum-form-section">
+            <h2>Start a New Discussion</h2>
+            <form action="#" method="post">
+                <label for="username">Your Name:</label>
+                <input type="text" id="username" name="username" required maxlength="20"><br><br>
 
-        <input type="submit" value="Post">
-    </form>
+                <label for="topic">Topic Title:</label>
+                <input type="text" id="topic" name="topic" required maxlength="50"><br><br>
 
-    <!-- Embedded Video -->
-    <h2>Opinions on this video. Is it True?</h2>
-<iframe width="560" height="315" src="https://www.youtube.com/embed/R9s1Iswvz3Q?si=vgrpgZPAY2GB95Ad" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                <label>Category:</label>
+                <input type="radio" id="general" name="category" value="General" checked>
+                <label for="general">General</label>
+                <input type="radio" id="gear" name="category" value="Gear">
+                <label for="gear">Gear</label>
+                <input type="radio" id="music" name="category" value="Music">
+                <label for="music">Music</label><br><br>
 
-    <br><br>
-    <a href="index.html">Back to Home</a>
+                <label>
+                    <input type="checkbox" name="notify" value="yes">
+                    Notify me of replies
+                </label><br><br>
 
+                <label for="message">Message:</label><br>
+                <textarea id="message" name="message" rows="5" cols="40" required></textarea><br><br>
 
+                <input type="submit" value="Post">
+            </form>
+        </div>
+
+        <!-- Embedded Video -->
+        <div class="video-section">
+            <h2>Opinions on this video. Is it True?</h2>
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/R9s1Iswvz3Q?si=vgrpgZPAY2GB95Ad" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+        </div>
+
+        <div class="back-home-section">
+            <br><br>
+            <a href="index.html">Back to Home</a>
+        </div>
+    </div>
 </body>
 </html>
