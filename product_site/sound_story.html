@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/stylesheet.css" />
+
+    <!-- SEO Meta Tags -->
+    <title>SoundStory Forum | Discuss Music, Share Playlists & Gear Tips</title>
+    <meta
+      name="description"
+      content="Join the SoundStory music forum to talk about your favorite albums, share playlists, explore mixing gear, and connect with other passionate music fans."
+    />
+    <meta
+      name="keywords"
+      content="music forum, discuss music, share playlists, best albums, mixing gear, online music discussions, SoundStory community"
+    />
+    <!-- Google Tag Manager -->
+    <script>
+      (function (w, d, s, l, i) {
+        w[l] = w[l] || [];
+        w[l].push({ "gtm.start": new Date().getTime(), event: "gtm.js" });
+        var f = d.getElementsByTagName(s)[0],
+          j = d.createElement(s),
+          dl = l != "dataLayer" ? "&l=" + l : "";
+        j.async = true;
+        j.src = "https://www.googletagmanager.com/gtm.js?id=" + i + dl;
+        f.parentNode.insertBefore(j, f);
+      })(window, document, "script", "dataLayer", "GTM-5FD22DLH");
+    </script>
+    <!-- End Google Tag Manager -->
+  </head>
+  <body>
+    <!-- Google Tag Manager (noscript) -->
+    <noscript
+      ><iframe
+        src="https://www.googletagmanager.com/ns.html?id=GTM-5FD22DLH"
+        height="0"
+        width="0"
+        style="display: none; visibility: hidden"
+      ></iframe
+    ></noscript>
+    <!-- End Google Tag Manager (noscript) -->
+    <!-- Logo -->
+    <div class="logo-section">
+      <img
+        src="images/soundstory.jpg"
+        alt="SoundStory logo with headphones and music notes"
+        width="200"
+        height="200"
+      />
+    </div>
+
+    <!-- Title -->
+    <div class="title-section">
+      <h1>Join the Conversation on SoundStory</h1>
+    </div>
+
+    <!-- Navigation -->
+    <header class="header">
+      <span class="header-logo">SoundStory</span>
+      <nav class="header-nav">
+        <a href="sound_story.html">Home</a>
+        <a href="music_forum.html" class="active">Forum</a>
+        <a href="about.html">About</a>
+      </nav>
+    </header>
+
+    <main id="main-content">
+      <!-- Intro Section -->
+      <section class="intro-section">
+        <p>
+          Welcome to our <strong>music forum</strong> — a space for deeper
+          discussions about songs, artists, and sound gear. Whether you're into
+          pop, hip-hop, or indie, SoundStory is the place to
+          <em>share your playlist and connect with music fans worldwide</em>.
+        </p>
+      </section>
+
+      <!-- Related Images -->
+      <section class="related-images">
+        <img
+          src="images/clairo.jpeg"
+          alt="People discussing albums and music in an online forum"
+          width="300"
+          height="200"
+        />
+        <img
+          src="images/laufey.jpeg"
+          alt="Colorful sound wave and music artwork"
+          width="300"
+          height="200"
+        />
+      </section>
+
+      <!-- Forum Topics -->
+      <section class="forum-topics-section">
+        <h2>Recent Music Discussions</h2>
+        <table>
+          <thead>
+            <tr>
+              <th>Topic</th>
+              <th>Started By</th>
+              <th>Replies</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Favorite Album of 2024</td>
+              <td>musicfan22</td>
+              <td>15</td>
+            </tr>
+            <tr>
+              <td>Best Headphones for Mixing</td>
+              <td>soundguru</td>
+              <td>8</td>
+            </tr>
+            <tr>
+              <td>Share Your Playlist!</td>
+              <td>djangel</td>
+              <td>12</td>
+            </tr>
+          </tbody>
+        </table>
+      </section>
+
+      <!-- Forum Post Form -->
+      <section class="forum-form-section">
+        <h2>Start a New Music Discussion</h2>
+        <form action="#" method="post">
+          <label for="username">Your Name:</label>
+          <input
+            type="text"
+            id="username"
+            name="username"
+            required
+            maxlength="20"
+          /><br /><br />
+
+          <label for="topic">Topic Title:</label>
+          <input
+            type="text"
+            id="topic"
+            name="topic"
+            required
+            maxlength="50"
+          /><br /><br />
+
+          <label>Category:</label>
+          <input
+            type="radio"
+            id="general"
+            name="category"
+            value="General"
+            checked
+          />
+          <label for="general">General</label>
+          <input type="radio" id="gear" name="category" value="Gear" />
+          <label for="gear">Gear</label>
+          <input type="radio" id="music" name="category" value="Music" />
+          <label for="music">Music</label><br /><br />
+
+          <label>
+            <input type="checkbox" name="notify" value="yes" />
+            Notify me of replies </label
+          ><br /><br />
+
+          <label for="message">Message:</label><br />
+          <textarea
+            id="message"
+            name="message"
+            rows="5"
+            cols="40"
+            required
+          ></textarea
+          ><br /><br />
+
+          <input type="submit" value="Post" />
+        </form>
+      </section>
+
+      <!-- Embedded Video -->
+      <section class="video-section">
+        <h2>Watch & Discuss</h2>
+        <p>What are your thoughts on this video? Join the discussion below!</p>
+        <iframe
+          width="560"
+          height="315"
+          src="https://www.youtube.com/embed/R9s1Iswvz3Q?si=vgrpgZPAY2GB95Ad"
+          title="Music analysis video discussion"
+          frameborder="0"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+          referrerpolicy="strict-origin-when-cross-origin"
+          allowfullscreen
+        ></iframe>
+      </section>
+
+      <div class="back-home-section">
+        <br /><br />
+        <a href="index.html">Back to Home</a>
+      </div>
+    </main>
+  </body>
+</html>
