@@ -39,22 +39,24 @@
         height="0"
         width="0"
         style="display: none; visibility: hidden"
+        title="Google Tag Manager"
+        aria-hidden="true"
       ></iframe
     ></noscript>
     <!-- End Google Tag Manager (noscript) -->
     <!-- Header with Navigation -->
     <header class="header">
-      <div class="header-logo">SoundStory</div>
-      <nav class="header-nav">
-        <a href="sound_story.html" class="active">Home</a>
-        <a href="music_forum.html">Forums</a>
-        <a href="about.html">About</a>
+      <div class="header-logo" aria-label="SoundStory logo" tabindex="0">SoundStory</div>
+      <nav class="header-nav" aria-label="Main navigation">
+        <a href="sound_story.html" class="active" tabindex="0">Home</a>
+        <a href="music_forum.html" tabindex="0">Forums</a>
+        <a href="about.html" tabindex="0">About</a>
       </nav>
     </header>
 
     <!-- Main Heading -->
     <section class="main-heading-container">
-      <h1 class="main-heading">
+      <h1 class="main-heading" tabindex="0">
         Welcome to SoundStory — The Ultimate Music Forum
       </h1>
     </section>
@@ -62,7 +64,7 @@
     <!-- Main Content Area -->
     <main id="main-content">
       <section class="about-section">
-        <h2>What is SoundStory?</h2>
+        <h2 tabindex="0">What is SoundStory?</h2>
         <p>
           <strong>SoundStory</strong> is a community-driven
           <em>music forum</em> where fans, artists, and casual listeners come
@@ -70,12 +72,14 @@
           <strong>discuss songs and albums</strong>, discover new genres, and
           tell the <strong>story of your music journey</strong>.
         </p>
+        <!-- Example image with alt text -->
+        <img src="img/community.png" alt="People discussing music in a forum" />
       </section>
 
       <hr />
 
       <section class="why-join-section">
-        <h2>Why Join SoundStory?</h2>
+        <h2 tabindex="0">Why Join SoundStory?</h2>
         <p>
           Our platform connects people through their love of sound. Whether
           you're into <strong>rock, pop, hip hop, jazz, or indie music</strong>,
@@ -83,27 +87,41 @@
         </p>
 
         <ul>
-          <li>Share your favorite tracks and playlists</li>
-          <li>Discuss albums and artists with other fans</li>
-          <li>Discover new songs recommended by the community</li>
-          <li>Connect directly with music lovers worldwide</li>
+          <li tabindex="0">Share your favorite tracks and playlists</li>
+          <li tabindex="0">Discuss albums and artists with other fans</li>
+          <li tabindex="0">Discover new songs recommended by the community</li>
+          <li tabindex="0">Connect directly with music lovers worldwide</li>
         </ul>
+        <!-- Example image with alt text -->
+        <img src="img/music_genres.jpg" alt="Various music genres represented by icons" />
       </section>
 
       <section class="get-connected-section">
-        <h2 id="get-connected">Get Connected</h2>
+        <h2 id="get-connected" tabindex="0">Get Connected</h2>
         <p>
-          Stay active in our <a href="second_page.html">music forums</a> or
+          Stay active in our
+          <a href="second_page.html" tabindex="0" aria-label="Go to music forums">music forums</a> or
           explore the
-          <a href="https://www.billboard.com" target="_blank"
+          <a href="https://www.billboard.com" target="_blank" tabindex="0" aria-label="Visit Billboard charts (opens in new tab)"
             >latest charts on Billboard</a
           >.
         </p>
 
-        <button onclick="window.location.href='second_page.html'">
+        <button onclick="window.location.href='second_page.html'" tabindex="0" aria-label="Visit the Forums">
           Visit the Forums
         </button>
       </section>
     </main>
+    <script>
+      // Optional: Add keyboard navigation for button (Enter/Space)
+      document.querySelectorAll('button').forEach(btn => {
+        btn.addEventListener('keydown', function(e) {
+          if (e.key === 'Enter' || e.key === ' ') {
+            e.preventDefault();
+            btn.click();
+          }
+        });
+      });
+    </script>
   </body>
 </html>

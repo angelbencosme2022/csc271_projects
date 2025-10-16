@@ -1,241 +1,277 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-    <!-- SEO Meta Tags -->
-    <title>About - SoundStory | Music Community & Forums</title>
-    <meta
-      name="description"
-      content="Learn about SoundStory — a global community where music lovers connect, share, and discover new sounds from around the world."
-    />
-    <meta
-      name="keywords"
-      content="SoundStory, music forum, music community, about SoundStory, music discussion, global music fans"
-    />
-    <meta name="author" content="SoundStory Team" />
+        <!-- SEO Meta Tags -->
+        <title>About - SoundStory | Music Community & Forums</title>
+        <meta
+            name="description"
+            content="Learn about SoundStory — a global community where music lovers connect, share, and discover new sounds from around the world."
+        />
+        <meta
+            name="keywords"
+            content="SoundStory, music forum, music community, about SoundStory, music discussion, global music fans"
+        />
+        <meta name="author" content="SoundStory Team" />
 
-    <!-- Open Graph (Facebook & LinkedIn) -->
-    <meta
-      property="og:title"
-      content="About SoundStory | Discover Our Music Community"
-    />
-    <meta
-      property="og:description"
-      content="SoundStory is a welcoming space for music lovers to connect, share, and explore sounds across cultures."
-    />
-    <meta property="og:type" content="website" />
-    <meta property="og:url" content="https://www.soundstory.com/about.html" />
-    <meta
-      property="og:image"
-      content="https://www.soundstory.com/images/og-image.jpg"
-    />
+        <!-- Open Graph (Facebook & LinkedIn) -->
+        <meta
+            property="og:title"
+            content="About SoundStory | Discover Our Music Community"
+        />
+        <meta
+            property="og:description"
+            content="SoundStory is a welcoming space for music lovers to connect, share, and explore sounds across cultures."
+        />
+        <meta property="og:type" content="website" />
+        <meta property="og:url" content="https://www.soundstory.com/about.html" />
+        <meta
+            property="og:image"
+            content="https://www.soundstory.com/images/og-image.jpg"
+        />
 
-    <!-- Twitter Card -->
-    <meta name="twitter:card" content="summary_large_image" />
-    <meta
-      name="twitter:title"
-      content="About SoundStory | Discover Our Music Community"
-    />
-    <meta
-      name="twitter:description"
-      content="Join SoundStory — where music lovers connect and share their passion for sound."
-    />
-    <meta
-      name="twitter:image"
-      content="https://www.soundstory.com/images/og-image.jpg"
-    />
+        <!-- Twitter Card -->
+        <meta name="twitter:card" content="summary_large_image" />
+        <meta
+            name="twitter:title"
+            content="About SoundStory | Discover Our Music Community"
+        />
+        <meta
+            name="twitter:description"
+            content="Join SoundStory — where music lovers connect and share their passion for sound."
+        />
+        <meta
+            name="twitter:image"
+            content="https://www.soundstory.com/images/og-image.jpg"
+        />
 
-    <!-- Favicon -->
-    <link rel="icon" type="image/png" href="images/favicon.png" />
+        <!-- Favicon -->
+        <link rel="icon" type="image/png" href="images/favicon.png" alt="SoundStory logo favicon" />
 
-    <!-- Stylesheet -->
-    <link rel="stylesheet" href="css/stylesheet.css" />
-    <!-- Google Tag Manager -->
-    <script>
-      (function (w, d, s, l, i) {
-        w[l] = w[l] || [];
-        w[l].push({ "gtm.start": new Date().getTime(), event: "gtm.js" });
-        var f = d.getElementsByTagName(s)[0],
-          j = d.createElement(s),
-          dl = l != "dataLayer" ? "&l=" + l : "";
-        j.async = true;
-        j.src = "https://www.googletagmanager.com/gtm.js?id=" + i + dl;
-        f.parentNode.insertBefore(j, f);
-      })(window, document, "script", "dataLayer", "GTM-5FD22DLH");
-    </script>
-    <!-- End Google Tag Manager -->
-  </head>
+        <!-- Stylesheet -->
+        <link rel="stylesheet" href="css/stylesheet.css" />
+        <style>
+            /* Ensure visible focus for keyboard navigation */
+            a:focus, button:focus, .header-nav a:focus {
+                outline: 2px solid #0078d7;
+                outline-offset: 2px;
+                background: #e6f0fa;
+            }
+            .skip-link {
+                position: absolute;
+                left: -999px;
+                top: auto;
+                width: 1px;
+                height: 1px;
+                overflow: hidden;
+                z-index: 100;
+                background: #fff;
+                color: #0078d7;
+                padding: 8px;
+                border-radius: 4px;
+            }
+            .skip-link:focus {
+                left: 10px;
+                top: 10px;
+                width: auto;
+                height: auto;
+                font-weight: bold;
+                box-shadow: 0 0 2px #0078d7;
+            }
+        </style>
+        <!-- Google Tag Manager -->
+        <script>
+            (function (w, d, s, l, i) {
+                w[l] = w[l] || [];
+                w[l].push({ "gtm.start": new Date().getTime(), event: "gtm.js" });
+                var f = d.getElementsByTagName(s)[0],
+                    j = d.createElement(s),
+                    dl = l != "dataLayer" ? "&l=" + l : "";
+                j.async = true;
+                j.src = "https://www.googletagmanager.com/gtm.js?id=" + i + dl;
+                f.parentNode.insertBefore(j, f);
+            })(window, document, "script", "dataLayer", "GTM-5FD22DLH");
+        </script>
+        <!-- End Google Tag Manager -->
+    </head>
 
-  <body>
-    <!-- Google Tag Manager (noscript) -->
-    <noscript
-      ><iframe
-        src="https://www.googletagmanager.com/ns.html?id=GTM-5FD22DLH"
-        height="0"
-        width="0"
-        style="display: none; visibility: hidden"
-      ></iframe
-    ></noscript>
-    <!-- End Google Tag Manager (noscript) -->
+    <body>
+        <!-- Skip to main content link for keyboard users -->
+        <a href="#main-content" class="skip-link" tabindex="0">Skip to main content</a>
 
-    <!-- Header with Navigation -->
-    <div class="header">
-      <div class="header-logo">SoundStory</div>
-      <nav class="header-nav">
-        <a href="sound_story.html">Home</a>
-        <a href="music_forum.html">Forums</a>
-        <a href="about.html" class="active">About</a>
-      </nav>
-    </div>
+        <!-- Google Tag Manager (noscript) -->
+        <noscript
+            ><iframe
+                src="https://www.googletagmanager.com/ns.html?id=GTM-5FD22DLH"
+                height="0"
+                width="0"
+                style="display: none; visibility: hidden"
+                title="Google Tag Manager"
+                aria-hidden="true"
+            ></iframe
+        ></noscript>
+        <!-- End Google Tag Manager (noscript) -->
 
-    <!-- Main Heading -->
-    <div class="main-heading-container">
-      <h1 class="main-heading">About SoundStory</h1>
-    </div>
+        <!-- Header with Navigation -->
+        <header class="header" role="banner">
+            <div class="header-logo" aria-label="SoundStory logo">SoundStory</div>
+            <nav class="header-nav" aria-label="Main navigation">
+                <a href="sound_story.html" tabindex="0">Home</a>
+                <a href="music_forum.html" tabindex="0">Forums</a>
+                <a href="about.html" class="active" aria-current="page" tabindex="0">About</a>
+            </nav>
+        </header>
 
-    <!-- Main Content Area -->
-    <div id="main-content">
-      <div class="mission-section">
-        <h2>Our Mission</h2>
-        <p>
-          <strong>SoundStory</strong> was founded with a simple mission: to
-          create a <em>welcoming space</em>
-          where music lovers from all backgrounds can share their passion,
-          discover new sounds, and connect with like-minded individuals. We
-          believe that music is a universal language that transcends borders,
-          cultures, and generations.
-        </p>
-      </div>
-
-      <hr />
-
-      <div class="story-section">
-        <h2>Our Story</h2>
-        <p>
-          Founded in 2024, SoundStory began as a small community of friends who
-          wanted to discuss music beyond mainstream platforms. What started as
-          weekly meetups evolved into a thriving online forum with thousands of
-          members worldwide. Today, we're proud to be one of the most
-          <em>diverse and inclusive</em> music communities on the web.
-        </p>
-        <p>
-          Our community spans across <strong>50+ countries</strong> and features
-          discussions in multiple languages. From underground indie bands to
-          chart-topping hits, from vinyl collectors to digital streaming
-          enthusiasts, SoundStory welcomes everyone.
-        </p>
-      </div>
-
-      <hr />
-
-      <div class="stats-section">
-        <h2>By the Numbers</h2>
-        <div class="stats-container">
-          <div class="stat-box">
-            <span class="stat-number">10K+</span>
-            <span class="stat-label">Active Members</span>
-          </div>
-          <div class="stat-box">
-            <span class="stat-number">50K+</span>
-            <span class="stat-label">Forum Posts</span>
-          </div>
-          <div class="stat-box">
-            <span class="stat-number">500+</span>
-            <span class="stat-label">Daily Discussions</span>
-          </div>
+        <!-- Main Heading -->
+        <div class="main-heading-container">
+            <h1 class="main-heading">About SoundStory</h1>
         </div>
-      </div>
 
-      <hr />
+        <!-- Main Content Area -->
+        <main id="main-content" tabindex="-1">
+            <section class="mission-section">
+                <h2>Our Mission</h2>
+                <p>
+                    <strong>SoundStory</strong> was founded with a simple mission: to
+                    create a <em>welcoming space</em>
+                    where music lovers from all backgrounds can share their passion,
+                    discover new sounds, and connect with like-minded individuals. We
+                    believe that music is a universal language that transcends borders,
+                    cultures, and generations.
+                </p>
+            </section>
 
-      <div class="team-section">
-        <h2>Meet the Team</h2>
-        <p>
-          SoundStory is maintained by a passionate team of music enthusiasts and
-          tech professionals who volunteer their time to keep this community
-          thriving.
-        </p>
-        <div class="team-grid">
-          <div class="team-member">
-            <h3>Alex Rivera</h3>
-            <p><strong>Founder & Community Lead</strong></p>
-            <p>
-              Music journalist with 10+ years experience. Loves jazz and
-              classical.
-            </p>
-          </div>
-          <div class="team-member">
-            <h3>Sam Chen</h3>
-            <p><strong>Technical Director</strong></p>
-            <p>Full-stack developer and electronic music producer.</p>
-          </div>
-          <div class="team-member">
-            <h3>Maya Patel</h3>
-            <p><strong>Content Moderator</strong></p>
-            <p>
-              Music educator specializing in world music and ethnomusicology.
-            </p>
-          </div>
-          <div class="team-member">
-            <h3>Jordan Lee</h3>
-            <p><strong>Events Coordinator</strong></p>
-            <p>
-              Concert promoter with connections across the indie music scene.
-            </p>
-          </div>
-        </div>
-      </div>
+            <hr />
 
-      <hr />
+            <section class="story-section">
+                <h2>Our Story</h2>
+                <p>
+                    Founded in 2024, SoundStory began as a small community of friends who
+                    wanted to discuss music beyond mainstream platforms. What started as
+                    weekly meetups evolved into a thriving online forum with thousands of
+                    members worldwide. Today, we're proud to be one of the most
+                    <em>diverse and inclusive</em> music communities on the web.
+                </p>
+                <p>
+                    Our community spans across <strong>50+ countries</strong> and features
+                    discussions in multiple languages. From underground indie bands to
+                    chart-topping hits, from vinyl collectors to digital streaming
+                    enthusiasts, SoundStory welcomes everyone.
+                </p>
+            </section>
 
-      <div class="values-section">
-        <h2>Our Values</h2>
-        <ul>
-          <li>
-            <strong>Inclusivity:</strong> Everyone is welcome regardless of
-            their musical taste or knowledge level
-          </li>
-          <li>
-            <strong>Respect:</strong> We foster constructive discussions and
-            celebrate diverse opinions
-          </li>
-          <li>
-            <strong>Discovery:</strong> We encourage members to explore new
-            genres and artists
-          </li>
-          <li>
-            <strong>Authenticity:</strong> We value genuine passion and honest
-            conversations about music
-          </li>
-          <li>
-            <strong>Community:</strong> We believe in the power of connection
-            through shared musical experiences
-          </li>
-        </ul>
-      </div>
+            <hr />
 
-      <hr />
+            <section class="stats-section" aria-label="Community statistics">
+                <h2>By the Numbers</h2>
+                <div class="stats-container">
+                    <div class="stat-box" tabindex="0" aria-label="Over 10,000 active members">
+                        <span class="stat-number">10K+</span>
+                        <span class="stat-label">Active Members</span>
+                    </div>
+                    <div class="stat-box" tabindex="0" aria-label="Over 50,000 forum posts">
+                        <span class="stat-number">50K+</span>
+                        <span class="stat-label">Forum Posts</span>
+                    </div>
+                    <div class="stat-box" tabindex="0" aria-label="Over 500 daily discussions">
+                        <span class="stat-number">500+</span>
+                        <span class="stat-label">Daily Discussions</span>
+                    </div>
+                </div>
+            </section>
 
-      <div class="contact-section">
-        <h2>Get in Touch</h2>
-        <p>
-          Have questions or feedback? We'd love to hear from you!<br />
-          Email us at:
-          <a href="mailto:hello@soundstory.com">hello@soundstory.com</a><br />
-          Follow us on social media: <a href="#">Twitter</a> |
-          <a href="#">Instagram</a> | <a href="#">Discord</a>
-        </p>
-      </div>
+            <hr />
 
-      <div class="back-navigation">
-        <br />
-        <p>
-          <a href="index.html">← Back to Home</a> |
-          <a href="second_page.html">Visit Forums →</a>
-        </p>
-      </div>
-    </div>
-  </body>
+            <section class="team-section">
+                <h2>Meet the Team</h2>
+                <p>
+                    SoundStory is maintained by a passionate team of music enthusiasts and
+                    tech professionals who volunteer their time to keep this community
+                    thriving.
+                </p>
+                <div class="team-grid">
+                    <div class="team-member" tabindex="0" aria-label="Alex Rivera, Founder and Community Lead. Music journalist with 10+ years experience. Loves jazz and classical.">
+                        <h3>Alex Rivera</h3>
+                        <p><strong>Founder & Community Lead</strong></p>
+                        <p>
+                            Music journalist with 10+ years experience. Loves jazz and
+                            classical.
+                        </p>
+                    </div>
+                    <div class="team-member" tabindex="0" aria-label="Sam Chen, Technical Director. Full-stack developer and electronic music producer.">
+                        <h3>Sam Chen</h3>
+                        <p><strong>Technical Director</strong></p>
+                        <p>Full-stack developer and electronic music producer.</p>
+                    </div>
+                    <div class="team-member" tabindex="0" aria-label="Maya Patel, Content Moderator. Music educator specializing in world music and ethnomusicology.">
+                        <h3>Maya Patel</h3>
+                        <p><strong>Content Moderator</strong></p>
+                        <p>
+                            Music educator specializing in world music and ethnomusicology.
+                        </p>
+                    </div>
+                    <div class="team-member" tabindex="0" aria-label="Jordan Lee, Events Coordinator. Concert promoter with connections across the indie music scene.">
+                        <h3>Jordan Lee</h3>
+                        <p><strong>Events Coordinator</strong></p>
+                        <p>
+                            Concert promoter with connections across the indie music scene.
+                        </p>
+                    </div>
+                </div>
+            </section>
+
+            <hr />
+
+            <section class="values-section">
+                <h2>Our Values</h2>
+                <ul>
+                    <li>
+                        <strong>Inclusivity:</strong> Everyone is welcome regardless of
+                        their musical taste or knowledge level
+                    </li>
+                    <li>
+                        <strong>Respect:</strong> We foster constructive discussions and
+                        celebrate diverse opinions
+                    </li>
+                    <li>
+                        <strong>Discovery:</strong> We encourage members to explore new
+                        genres and artists
+                    </li>
+                    <li>
+                        <strong>Authenticity:</strong> We value genuine passion and honest
+                        conversations about music
+                    </li>
+                    <li>
+                        <strong>Community:</strong> We believe in the power of connection
+                        through shared musical experiences
+                    </li>
+                </ul>
+            </section>
+
+            <hr />
+
+            <section class="contact-section">
+                <h2>Get in Touch</h2>
+                <p>
+                    Have questions or feedback? We'd love to hear from you!<br />
+                    Email us at:
+                    <a href="mailto:hello@soundstory.com" tabindex="0">hello@soundstory.com</a><br />
+                    Follow us on social media: 
+                    <a href="#" tabindex="0" aria-label="Follow us on Twitter">Twitter</a> |
+                    <a href="#" tabindex="0" aria-label="Follow us on Instagram">Instagram</a> | 
+                    <a href="#" tabindex="0" aria-label="Join us on Discord">Discord</a>
+                </p>
+            </section>
+
+            <nav class="back-navigation" aria-label="Page navigation">
+                <br />
+                <p>
+                    <a href="index.html" tabindex="0">← Back to Home</a> |
+                    <a href="second_page.html" tabindex="0">Visit Forums →</a>
+                </p>
+            </nav>
+        </main>
+    </body>
 </html>
