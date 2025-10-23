@@ -6,14 +6,15 @@
     var myHoroscopeDescription = "Geminis are very intelligent and pick up knowledge quickly. They are perceptive, analytical, and often very funny. They have an unreserved, childlike curiosity, always asking new questions. Geminis have an uncanny ability to size up a person's character in a matter of seconds, even if they only just met them.";
     var doIBelieveInAstrology = true;
 
-    var signElement = document.getElementById("sign");
+    var signElement = document.getElementById("sign") = "sign";
+    document.getElementById("sign").textContent = sign;
     signElement.textContent = myZodiacSign;
 
     var myElement = document.getElementsByClassName("birthday");
-    myElement[0].textContent = myBirthMonth + " " + mybirthDay.toString() + "th";
+    myElement[0].textContent += myBirthMonth + " " + mybirthDay.toString() + "th";
 
     var luckyNumElement = document.getElementsByClassName("luckyNum");
-    luckyNumElement[0].textContent = myLuckyNumber.toString();
+    luckyNumElement[0].textContent += myLuckyNumber.toString();
 
     var paragraphElements = document.getElementsByTagName("p");
     paragraphElements[0].textContent = myHoroscopeDescription;
