@@ -87,20 +87,20 @@
     </div>
 
     <!-- Navigation -->
-    <header class="header">
-      <span class="header-logo" tabindex="0">SoundStory</span>
-      <nav class="header-nav" aria-label="Main navigation">
-        <a href="sound_story.html" tabindex="0">Home</a>
-        <a href="music_forum.html" class="active" tabindex="0">Forum</a>
-        <a href="about.html" tabindex="0">About</a>
-      </nav>
-    </header>
+   <header class="header" role="banner">
+            <div class="header-logo" aria-label="SoundStory logo">SoundStory</div>
+            <nav class="header-nav" aria-label="Main navigation">
+                <a href="music_forum.html" tabindex="0">Home</a>
+                <a href="sound_story.html"  class="active" aria-current="page" tabindex="0">Forums</a>
+                <a href="about.html"  tabindex="0">About</a>
+            </nav>
+        </header>
 
     <main id="main-content" tabindex="-1">
       <!-- Intro Section -->
       <section class="intro-section">
         <p>
-          Welcome to our <strong>music forum</strong> — a space for deeper
+          Welcome to our <strong>music forum</strongg> — a space for deeper
           discussions about songs, artists, and sound gear. Whether you're into
           pop, hip-hop, or indie, SoundStory is the place to
           <em>share your playlist and connect with music fans worldwide</em>.
@@ -238,5 +238,6 @@
         <a href="index.html" tabindex="0">Back to Home</a>
       </div>
     </main>
+    <script src="js/app.js"></script>
   </body>
 </html>

@@ -45,14 +45,14 @@
     ></noscript>
     <!-- End Google Tag Manager (noscript) -->
     <!-- Header with Navigation -->
-    <header class="header">
-      <div class="header-logo" aria-label="SoundStory logo" tabindex="0">SoundStory</div>
-      <nav class="header-nav" aria-label="Main navigation">
-        <a href="sound_story.html" class="active" tabindex="0">Home</a>
-        <a href="music_forum.html" tabindex="0">Forums</a>
-        <a href="about.html" tabindex="0">About</a>
-      </nav>
-    </header>
+   <header class="header" role="banner">
+            <div class="header-logo" aria-label="SoundStory logo">SoundStory</div>
+            <nav class="header-nav" aria-label="Main navigation">
+                <a href="music_forum.html" class="active" aria-current="page" tabindex="0">Home</a>
+                <a href="sound_story.html" tabindex="0">Forums</a>
+                <a href="about.html"  tabindex="0">About</a>
+            </nav>
+        </header>
 
     <!-- Main Heading -->
     <section class="main-heading-container">
@@ -107,7 +107,7 @@
           >.
         </p>
 
-        <button onclick="window.location.href='second_page.html'" tabindex="0" aria-label="Visit the Forums">
+        <button onclick="window.location.href='sound_story.html'" tabindex="0" aria-label="Visit the Forums">
           Visit the Forums
         </button>
       </section>
@@ -123,5 +123,7 @@
         });
       });
     </script>
+
+    <script src="js/app.js"></script>
   </body>
 </html>
