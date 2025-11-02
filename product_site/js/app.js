@@ -102,3 +102,7 @@ console.log('JavaScript loaded successfully!');
 console.log('Total Members:', totalMembers);
 console.log('Average Posts:', avgPosts);
 console.log('Growth:', growthPercent + '%');
+
+
+
+
