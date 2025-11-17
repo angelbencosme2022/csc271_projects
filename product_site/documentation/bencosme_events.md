@@ -1,7 +1,4 @@
-Here’s how to apply the three steps **based on your code**—this is essentially the “event-handling pattern” your professor wants you to demonstrate:
-
----
-
+# Bencosme Events: Forum.js Documentation
 # ✅ **1. Select the element(s) you want the script to respond to**
 
 Use **querySelector** or **querySelectorAll** to target HTML elements.
