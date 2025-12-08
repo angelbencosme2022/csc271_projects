@@ -32,6 +32,7 @@
           <table class="forum-table">
             <thead>
               <tr>
+                <th>Image</th>
                 <th>Topic</th>
                 <th>Category</th>
                 <th>Started By</th>
@@ -103,6 +104,9 @@
         <div class="modal-header">
           <h2 id="modal-title"></h2>
         </div>
+        <div class="modal-image">
+          <img id="modal-image" src="" alt="Post image" style="max-width: 100%; height: auto;" />
+        </div>
         <div class="modal-meta">
           <span><strong>Posted by:</strong> <span id="modal-user"></span></span>
           <span id="modal-category"></span>
@@ -110,6 +114,14 @@
         <div class="modal-message" id="modal-message"></div>
       </div>
     </div>
+
+    <footer class="section">
+      <h2>Thoughts on This Video??</h2>
+      <div class="video-container">
+      <iframe width="560" height="315" src="https://www.youtube.com/embed/R9s1Iswvz3Q?si=sOyb7Fh0Kx71PjqZ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+      </div>
+    </footer>
+
 
     <script>
       // Data structure for forum posts
@@ -120,7 +132,8 @@
           username: "musicfan22",
           category: "Music",
           replies: 15,
-          message: "What's everyone's favorite album from this year? I've been really into the new releases from indie artists. Share your top picks!"
+          message: "What's everyone's favorite album from this year? I've been really into the new releases from indie artists. Share your top picks!",
+          media_src: "images/album_covers.jpeg"
         },
         {
           id: 2,
@@ -128,7 +141,8 @@
           username: "soundguru",
           category: "Gear",
           replies: 8,
-          message: "Looking for recommendations on professional headphones for mixing. What do you all use in your home studios?"
+          message: "Looking for recommendations on professional headphones for mixing. What do you all use in your home studios?",
+          media_src: "images/headphones.jpeg"
         },
         {
           id: 3,
@@ -136,8 +150,10 @@
           username: "djangel",
           category: "General",
           replies: 12,
-          message: "Drop your favorite playlists here! I'm always looking for new music to discover. All genres welcome!"
+          message: "Drop your favorite playlists here! I'm always looking for new music to discover. All genres welcome!",
+          media_src: "images/clairo.jpeg" 
         }
+
       ];
 
       let nextId = 4;
@@ -154,6 +170,7 @@
           const badgeClass = `badge badge-${post.category.toLowerCase()}`;
           
           row.innerHTML = `
+            <td><img src="${post.media_src}" alt="Post thumbnail" style="width: 50px; height: 50px; object-fit: cover;" /></td>
             <td><span class="topic-title">${post.topic}</span></td>
             <td><span class="${badgeClass}">${post.category}</span></td>
             <td>${post.username}</td>
@@ -168,6 +185,7 @@
         if (!post) return;
         
         document.getElementById('modal-title').textContent = post.topic;
+        document.getElementById('modal-image').src = post.media_src;
         document.getElementById('modal-user').textContent = post.username;
         document.getElementById('modal-category').innerHTML = `<span class="badge badge-${post.category.toLowerCase()}">${post.category}</span>`;
         document.getElementById('modal-message').textContent = post.message;
@@ -189,7 +207,8 @@
           username: document.getElementById('username').value,
           category: document.querySelector('input[name="category"]:checked').value,
           replies: 0,
-          message: document.getElementById('message').value
+          message: document.getElementById('message').value,
+          media_src: "images/default.jpeg"
         };
         
         forumPosts.unshift(newPost); // Add to beginning of array
