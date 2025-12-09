@@ -1,0 +1,29 @@
+Content & Audience
+Did peers understand the purpose of your product and what problem it solves?
+- Yes I feel like my peers understood the purpose of the product and the problem it solves. I received questions on whether the product existed or not already and I honestly don't know.
+- I feel like the purpose of that this was a music forum where people can find new artist and just have a space dedication to talking about music.
+Did they clearly understand who the site is for?
+    - Yes , they understood that the site was dedicated to music lovers and the demographic would most likely be people between the ages of 18-35 that are interested in small music genres
+Design
+What feedback did peers give about your planning and design elements?
+    - I really didn't get feedback about my planning and design but I know that my design and planning could have definitely been better. 
+Did they find your structure, navigation and visual layout effective?
+    - Yes they found that the structure, and navigation layout was effective. People liked the color choice of the site but I did get a comment that the text might be a little to small in some areas.
+Development
+What feedback did peers give about your site’s code-driven features or interactivity?
+ - I didn't get any feedback this
+Did they identify any issues with responsiveness, layout or broken behavior?
+- No they did not
+What accessibility feedback did you receive?
+    - I did not receive feedback about accessibility.
+Overall Site
+How did visitors rate the overall appearance and usability of your site?
+ - I feel like they really enjoyed the appearance and usabilty of the site. This visuals of the site are definitely a strong point of the site or maybe even the best point.
+What did peers identify as the strongest part of your website, and why do you think that aspect stood out?
+    - The color layout - I feel like a nice purple was choosen and the mix of yellow and pink text looked really nice.
+What improvements did they recommend?
+ They recommend just added more content related to the forum part of the site.
+Action Plan
+What two improvements will you make based on their feedback, and how will you implement them?
+- I plan on added images and a video to my site because I took them out. 
+-I also plan on adding more stuff related to the forum page since it is what my site is about. I will just add more sections to the forum page.
